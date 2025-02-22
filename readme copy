@@ -1,0 +1,7 @@
+echo "# nestjs-code-reviewer" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/rajeshwaran8/nestjs-code-reviewer.git
+git push -u origin main

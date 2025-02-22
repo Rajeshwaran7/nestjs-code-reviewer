@@ -1,0 +1,21 @@
+name: AI Code Review
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  review_code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run AI Code Review
+        run: |
+          curl -X POST https://b763-120-60-167-20.ngrok-free.app/webhook \
+          -H "Content-Type: application/json" \
+          -d '${{ toJson(github.event) }}'  
