@@ -23,7 +23,7 @@
     "@nestjs/common": "^11.0.1",
     "@nestjs/config": "^4.0.0",
     "@nestjs/core": "^11.0.1",
-    "@nestjs/platform-express": "^11.0.1",
+    "@nestjs/platform-express": "^11.1.13",
     "axios": "^1.7.9",
     "openai": "^4.85.1",
     "reflect-metadata": "^0.2.2",
